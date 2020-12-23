@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>images/about.png</file>
+        <file>images/bian.png</file>
+        <file>images/clockwise.png</file>
+        <file>images/conter_clockwise.png</file>
+        <file>images/down_arrow.png</file>
+        <file>images/ga.png</file>
+        <file>images/hui.png</file>
+        <file>images/jun.png</file>
+        <file>images/left_arrow.png</file>
+        <file>images/next_pic.png</file>
+        <file>images/openfile.png</file>
+        <file>images/pause.png</file>
+        <file>images/play.png</file>
+        <file>images/pre_pic.png</file>
+        <file>images/qq_smile.png</file>
+        <file>images/reset.png</file>
+        <file>images/reset2.png</file>
+        <file>images/right_arrow.png</file>
+        <file>images/rubbish.png</file>
+        <file>images/save.png</file>
+        <file>images/to_pic_mode.png</file>
+        <file>images/to_vedio_mode.png</file>
+        <file>images/up_arrow.png</file>
+        <file>images/codeforces.png</file>
+        <file>images/reset_vedio.png</file>
+        <file>images/be_big.png</file>
+        <file>images/be_small.png</file>
+        <file>images/er.png</file>
+        <file>images/get_pic.png</file>
+        <file>images/qslider.png</file>
+        <file>images/qslider_bg.png</file>
+        <file>images/qslider_btn.png</file>
+        <file>images/ce.png</file>
+        <file>images/404.png</file>
+        <file>images/ma.png</file>
+    </qresource>
+</RCC>

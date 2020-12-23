@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>696</width>
+    <height>489</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>189050741 zzy</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="img.qrc">
+    <normaloff>:/img/images/codeforces.png</normaloff>:/img/images/codeforces.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="6,2">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QToolButton" name="toolButton_play">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+          </property>
+          <property name="text">
+           <string>...</string>
+          </property>
+          <property name="icon">
+           <iconset resource="img.qrc">
+            <normaloff>:/img/images/pause.png</normaloff>:/img/images/pause.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSlider" name="video_slider">
+          <property name="styleSheet">
+           <string notr="true">QSlider::groove:horizontal {
+border: 1px solid #4A708B;
+background: #C0C0C0;
+height: 5px;
+border-radius: 1px;
+padding-left:-1px;
+padding-right:-1px;
+}
+
+QSlider::sub-page:horizontal {
+background: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
+    stop:0 #B1B1B1, stop:1 #c4c4c4);
+background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
+    stop: 0 #5DCCFF, stop: 1 #1874CD);
+border: 1px solid #4A708B;
+height: 10px;
+border-radius: 2px;
+}
+
+QSlider::add-page:horizontal {
+background: #575757;
+border: 0px solid #777;
+height: 10px;
+border-radius: 2px;
+}
+
+QSlider::handle:horizontal 
+{
+    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, 
+    stop:0.6 #45ADED, stop:0.778409 rgba(255, 255, 255, 255));
+
+    width: 11px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border-radius: 5px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.6 #2A8BDA, 
+    stop:0.778409 rgba(255, 255, 255, 255));
+
+    width: 11px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border-radius: 5px;
+}
+
+QSlider::sub-page:horizontal:disabled {
+background: #00009C;
+border-color: #999;
+}
+
+QSlider::add-page:horizontal:disabled {
+background: #eee;
+border-color: #999;
+}
+
+QSlider::handle:horizontal:disabled {
+background: #eee;
+border: 1px solid #aaa;
+border-radius: 4px;
+}</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="time_label">
+          <property name="font">
+           <font>
+            <family>Consolas</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSlider" name="volume_slider">
+          <property name="styleSheet">
+           <string notr="true">
+QSlider::groove:vertical {
+border: 1px solid #4A708B;
+background: #C0C0C0;
+width: 5px;
+border-radius: 1px;
+padding-left:-1px;
+padding-right:-1px;
+padding-top:-1px;
+padding-bottom:-1px;
+}
+
+QSlider::sub-page:vertical {
+background: #575757;
+border: 1px solid #4A708B;
+border-radius: 2px;
+}
+
+QSlider::add-page:vertical {
+background: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
+    stop:0 #c4c4c4, stop:1 #B1B1B1);
+background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
+    stop: 0 #5DCCFF, stop: 1 #1874CD);
+border: 0px solid #777;
+width: 10px;
+border-radius: 2px;
+}
+
+QSlider::handle:vertical 
+{
+    height: 11px;
+    margin-left: -3px;
+    margin-right: -3px;
+    border-radius: 5px;
+}
+
+QSlider::sub-page:vertical:disabled {
+background: #00009C;
+border-color: #999;
+}
+
+QSlider::add-page:vertical:disabled {
+background: #eee;
+border-color: #999;
+}
+
+QSlider::handle:vertical:disabled {
+background: #eee;
+border: 1px solid #aaa;
+border-radius: 4px;
+}</string>
+          </property>
+          <property name="sliderPosition">
+           <number>0</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>696</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件 (&amp;F)</string>
+    </property>
+    <addaction name="action_N"/>
+   </widget>
+   <widget class="QMenu" name="menu_Q">
+    <property name="title">
+     <string>滤镜 (&amp;Q)</string>
+    </property>
+    <addaction name="action_Q"/>
+    <addaction name="actionErzhihua"/>
+    <addaction name="action"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_Q"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpen_file_icon"/>
+   <addaction name="separator"/>
+   <addaction name="actionPlay_icon"/>
+   <addaction name="actionVedio_reset"/>
+   <addaction name="actionBe_big"/>
+   <addaction name="actionBe_small"/>
+   <addaction name="actionGet_pic"/>
+   <addaction name="actionMa"/>
+   <addaction name="separator"/>
+   <addaction name="actionTo_pic_mode"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_N">
+   <property name="text">
+    <string>打开文件  (&amp;N)</string>
+   </property>
+  </action>
+  <action name="actionOpen_file_icon">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/images/openfile.png</normaloff>:/img/images/openfile.png</iconset>
+   </property>
+   <property name="text">
+    <string>open_file_icon</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionPlay_icon">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/images/play.png</normaloff>:/img/images/play.png</iconset>
+   </property>
+   <property name="text">
+    <string>play_icon</string>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
+  </action>
+  <action name="actionTo_pic_mode">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/images/to_pic_mode.png</normaloff>:/img/images/to_pic_mode.png</iconset>
+   </property>
+   <property name="text">
+    <string>to_pic_mode</string>
+   </property>
+  </action>
+  <action name="action_Q">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/images/hui.png</normaloff>:/img/images/hui.png</iconset>
+   </property>
+   <property name="text">
+    <string>灰度化 (Q)</string>
+   </property>
+  </action>
+  <action name="actionVedio_reset">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/images/reset_vedio.png</normaloff>:/img/images/reset_vedio.png</iconset>
+   </property>
+   <property name="text">
+    <string>vedio_reset</string>
+   </property>
+  </action>
+  <action name="actionBe_big">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/images/be_big.png</normaloff>:/img/images/be_big.png</iconset>
+   </property>
+   <property name="text">
+    <string>be_big</string>
+   </property>
+  </action>
+  <action name="actionBe_small">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/images/be_small.png</normaloff>:/img/images/be_small.png</iconset>
+   </property>
+   <property name="text">
+    <string>be_small</string>
+   </property>
+  </action>
+  <action name="actionErzhihua">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/images/er.png</normaloff>:/img/images/er.png</iconset>
+   </property>
+   <property name="text">
+    <string>二值化 (&amp;W)</string>
+   </property>
+  </action>
+  <action name="actionGet_pic">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/images/get_pic.png</normaloff>:/img/images/get_pic.png</iconset>
+   </property>
+   <property name="text">
+    <string>get_pic</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/images/bian.png</normaloff>:/img/images/bian.png</iconset>
+   </property>
+   <property name="text">
+    <string>均值滤波 (&amp;E)</string>
+   </property>
+  </action>
+  <action name="actionMa">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/images/ma.png</normaloff>:/img/images/ma.png</iconset>
+   </property>
+   <property name="text">
+    <string>ma</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>

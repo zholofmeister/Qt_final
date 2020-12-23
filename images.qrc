@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>images/play.png</file>
+        <file>images/pause.png</file>
+        <file>images/openfile.png</file>
+        <file>images/reset.png</file>
+        <file>images/save.png</file>
+        <file>images/down_arrow.png</file>
+        <file>images/left_arrow.png</file>
+        <file>images/right_arrow.png</file>
+        <file>images/up_arrow.png</file>
+        <file>images/clockwise.png</file>
+        <file>images/conter_clockwise.png</file>
+        <file>images/reset2.png</file>
+        <file>images/rubbish.png</file>
+        <file>images/next_pic.png</file>
+        <file>images/pre_pic.png</file>
+        <file>images/to_vedio_mode.png</file>
+        <file>images/to_pic_mode.png</file>
+        <file>images/about.png</file>
+        <file>images/jun.png</file>
+        <file>images/bian.png</file>
+        <file>images/ga.png</file>
+        <file>images/hui.png</file>
+    </qresource>
+</RCC>

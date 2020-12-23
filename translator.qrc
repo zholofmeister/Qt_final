@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/te">
+        <file>resources/tr_en.qm</file>
+        <file>resources/tr_zh.qm</file>
+    </qresource>
+</RCC>

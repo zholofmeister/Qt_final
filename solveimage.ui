@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>solveImage</class>
+ <widget class="QMainWindow" name="solveImage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>189050741 zzy</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="img.qrc">
+    <normaloff>:/img/images/codeforces.png</normaloff>:/img/images/codeforces.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_9" stretch="6,2">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="3,2,2,3">
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton_3">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="img.qrc">
+            <normaloff>:/img/images/pre_pic.png</normaloff>:/img/images/pre_pic.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton_5">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="img.qrc">
+            <normaloff>:/img/images/next_pic.png</normaloff>:/img/images/next_pic.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_now_pic">
+          <property name="font">
+           <font>
+            <family>Consolas</family>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件 (&amp;F)</string>
+    </property>
+    <addaction name="action_N"/>
+    <addaction name="actionChange"/>
+   </widget>
+   <widget class="QMenu" name="menu_T">
+    <property name="title">
+     <string>滤镜 (&amp;T)</string>
+    </property>
+    <addaction name="action"/>
+    <addaction name="action_w"/>
+    <addaction name="action_e"/>
+    <addaction name="action_r"/>
+   </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>关于 (&amp;H)</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_T"/>
+   <addaction name="menu_H"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpen_file"/>
+   <addaction name="actionSave_image"/>
+   <addaction name="separator"/>
+   <addaction name="actionTo_vedio_mode"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget">
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QVBoxLayout" name="verticalLayout_8">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QToolButton" name="toolButton">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="img.qrc">
+             <normaloff>:/img/images/conter_clockwise.png</normaloff>:/img/images/conter_clockwise.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="toolButton_2">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="img.qrc">
+             <normaloff>:/img/images/clockwise.png</normaloff>:/img/images/clockwise.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QToolButton" name="toolButton_4">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="img.qrc">
+             <normaloff>:/img/images/up_arrow.png</normaloff>:/img/images/up_arrow.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="toolButton_6">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="img.qrc">
+             <normaloff>:/img/images/right_arrow.png</normaloff>:/img/images/right_arrow.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QToolButton" name="toolButton_7">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="img.qrc">
+             <normaloff>:/img/images/reset2.png</normaloff>:/img/images/reset2.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="toolButton_8">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="img.qrc">
+             <normaloff>:/img/images/rubbish.png</normaloff>:/img/images/rubbish.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_6">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="floating">
+    <bool>false</bool>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_6">
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="font">
+          <font>
+           <family>楷体</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>亮度：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="light_slider">
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal{ 
+                                                     height: 12px; 
+                                                     left: 4px; 
+                                                     right: 4px; 
+                                                     border-image: url(:/img/images/qslider_bg.png);
+                                                   } 
+QSlider::handle:horizontal{ 
+                                                     background: rgb(0, 238, 238);
+border: 1px solid rgb(0, 238, 238);
+width: 10px;
+height:10px;
+border-radius: 7px;
+margin-top:2px;
+margin-bottom:2px;
+}
+QSlider::sub-page:horizontal{border-image: url(:/img/images/qslider.png);}
+
+
+	
+
+</string>
+         </property>
+         <property name="sliderPosition">
+          <number>50</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="font">
+          <font>
+           <family>楷体</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>对比度：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="compare_slider">
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal{ 
+                                                     height: 12px; 
+                                                     left: 4px; 
+                                                     right: 4px; 
+                                                     border-image: url(:/img/images/qslider_bg.png);
+                                                   } 
+QSlider::handle:horizontal{ 
+                                                     background: rgb(0, 238, 238);
+border: 1px solid rgb(0, 238, 238);
+width: 10px;
+height:10px;
+border-radius: 7px;
+margin-top:2px;
+margin-bottom:2px;
+}
+QSlider::sub-page:horizontal{border-image: url(:/img/images/qslider.png);}
+
+
+	
+
+</string>
+         </property>
+         <property name="sliderPosition">
+          <number>50</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="font">
+          <font>
+           <family>楷体</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>二值化：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="horizontalSlider">
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal{ 
+                                                     height: 12px; 
+                                                     left: 4px; 
+                                                     right: 4px; 
+                                                     border-image: url(:/img/images/qslider_bg.png);
+                                                   } 
+QSlider::handle:horizontal{ 
+                                                     background: rgb(0, 238, 238);
+border: 1px solid rgb(0, 238, 238);
+width: 10px;
+height:10px;
+border-radius: 7px;
+margin-top:2px;
+margin-bottom:2px;
+}
+QSlider::sub-page:horizontal{border-image: url(:/img/images/qslider.png);}
+
+
+	
+
+</string>
+         </property>
+         <property name="sliderPosition">
+          <number>50</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_5">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="floating">
+    <bool>false</bool>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_5">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <family>楷体</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>渐红：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="horizontalSlider_2">
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal {
+border: 0px solid #bbb;
+}
+QSlider::sub-page:horizontal {
+background: rgb(255,136,122);
+border-radius: 0px;
+margin-top:8px;
+margin-bottom:8px;
+}
+QSlider::add-page:horizontal {
+background: rgb(255,255, 255);
+border: 0px solid #777;
+border-radius: 2px;
+margin-top:8px;
+margin-bottom:8px;
+}
+QSlider::handle:horizontal {
+background: rgb(236,59,39);
+border: 1px solid rgb(255,153,102);
+width: 14px;
+height:10px;
+border-radius: 7px;
+margin-top:2px;
+margin-bottom:2px;
+}
+QSlider::handle:horizontal:hover {
+background: rgb(255,48,48);
+border: 1px solid rgba(102,102,102,102);
+border-radius: 7px;
+}
+QSlider::sub-page:horizontal:disabled {
+background: #bbb;
+border-color: #999;
+}
+QSlider::add-page:horizontal:disabled {
+background: #eee;
+border-color: #999;
+}
+QSlider::handle:horizontal:disabled {
+background: #eee;
+border: 1px solid #aaa;
+border-radius: 4px;
+}</string>
+         </property>
+         <property name="sliderPosition">
+          <number>50</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="font">
+          <font>
+           <family>楷体</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>渐蓝：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="horizontalSlider_3">
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal {
+border: 0px solid #bbb;
+}
+QSlider::sub-page:horizontal {
+background: rgb(135,206,235);
+border-radius: 0px;
+margin-top:8px;
+margin-bottom:8px;
+}
+QSlider::add-page:horizontal {
+background: rgb(255,255,255);
+border: 0px solid #777;
+border-radius: 2px;
+margin-top:8px;
+margin-bottom:8px;
+}
+QSlider::handle:horizontal {
+background: rgb(0,191,255);
+border: 1px solid rgb(255,153,102);
+width: 14px;
+height:10px;
+border-radius: 7px;
+margin-top:2px;
+margin-bottom:2px;
+}
+QSlider::handle:horizontal:hover {
+background: rgb(19,63,195);
+border: 1px solid rgba(102,102,102,102);
+border-radius: 7px;
+}
+QSlider::sub-page:horizontal:disabled {
+background: #bbb;
+border-color: #999;
+}
+QSlider::add-page:horizontal:disabled {
+background: #eee;
+border-color: #999;
+}
+QSlider::handle:horizontal:disabled {
+background: #eee;
+border: 1px solid #aaa;
+border-radius: 4px;
+}</string>
+         </property>
+         <property name="sliderPosition">
+          <number>50</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="font">
+          <font>
+           <family>楷体</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>渐绿：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="horizontalSlider_4">
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal {
+border: 0px solid #bbb;
+}
+QSlider::sub-page:horizontal {
+background: rgb(144,238,144);
+border-radius: 0px;
+margin-top:8px;
+margin-bottom:8px;
+}
+QSlider::add-page:horizontal {
+background: rgb(255,255,255);
+border: 0px solid #777;
+border-radius: 2px;
+margin-top:8px;
+margin-bottom:8px;
+}
+QSlider::handle:horizontal {
+background: rgb(0,205,102);
+border: 1px solid rgb(255,153,102);
+width: 14px;
+height:10px;
+border-radius: 7px;
+margin-top:2px;
+margin-bottom:2px;
+}
+QSlider::handle:horizontal:hover {
+background: rgb(0,255,0);
+border: 1px solid rgba(102,102,102,102);
+border-radius: 7px;
+}
+QSlider::sub-page:horizontal:disabled {
+background: #bbb;
+border-color: #999;
+}
+QSlider::add-page:horizontal:disabled {
+background: #eee;
+border-color: #999;
+}
+QSlider::handle:horizontal:disabled {
+background: #eee;
+border: 1px solid #aaa;
+border-radius: 4px;
+}</string>
+         </property>
+         <property name="sliderPosition">
+          <number>50</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="action_N">
+   <property name="text">
+    <string>打开文件 (&amp;N)</string>
+   </property>
+  </action>
+  <action name="actionOpen_file">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/images/openfile.png</normaloff>:/img/images/openfile.png</iconset>
+   </property>
+   <property name="text">
+    <string>open_file</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionReset">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/images/reset.png</normaloff>:/img/images/reset.png</iconset>
+   </property>
+   <property name="text">
+    <string>reset</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/images/jun.png</normaloff>:/img/images/jun.png</iconset>
+   </property>
+   <property name="text">
+    <string>均值滤波(&amp;q)</string>
+   </property>
+  </action>
+  <action name="action_w">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/images/bian.png</normaloff>:/img/images/bian.png</iconset>
+   </property>
+   <property name="text">
+    <string>边缘检测(&amp;w)</string>
+   </property>
+  </action>
+  <action name="action_e">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/images/hui.png</normaloff>:/img/images/hui.png</iconset>
+   </property>
+   <property name="text">
+    <string>灰度化(&amp;e)</string>
+   </property>
+  </action>
+  <action name="action_r">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/images/ga.png</normaloff>:/img/images/ga.png</iconset>
+   </property>
+   <property name="text">
+    <string>伽马变换(r)</string>
+   </property>
+  </action>
+  <action name="actionSave_image">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/images/save.png</normaloff>:/img/images/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>save_image</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/images/about.png</normaloff>:/img/images/about.png</iconset>
+   </property>
+   <property name="text">
+    <string>关于作者</string>
+   </property>
+  </action>
+  <action name="actionTo_vedio_mode">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/images/to_vedio_mode.png</normaloff>:/img/images/to_vedio_mode.png</iconset>
+   </property>
+   <property name="text">
+    <string>to_vedio_mode</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionChange">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/images/ce.png</normaloff>:/img/images/ce.png</iconset>
+   </property>
+   <property name="text">
+    <string>中英文切换 (&amp;P)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <zorder>dockWidget_5</zorder>
+  <zorder>dockWidget</zorder>
+  <zorder>dockWidget_6</zorder>
+ </widget>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>
