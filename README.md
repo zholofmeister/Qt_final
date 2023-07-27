@@ -42,10 +42,16 @@ Ubuntu:  Qt creator + ffmpeg   (解码器,用于播放QMediaPlayer)
 # 六、测试与运行记录
 ![水平对称](https://github.com/zholofmeister/Qt_final/assets/49775592/4f91496e-35aa-4292-bc19-1e5831696d6a)
 水平对称
+
 ![竖直对称](https://github.com/zholofmeister/Qt_final/assets/49775592/e19a7a06-7b3c-47fb-957f-e4263c1ba42e)
 竖直对称
+
 ![逆时针旋转90度](https://github.com/zholofmeister/Qt_final/assets/49775592/240e1c35-a58f-4110-a241-0c642503c85f)
+逆时针旋转90度
+
 ![顺时针旋转90度](https://github.com/zholofmeister/Qt_final/assets/49775592/69fadaef-66a8-49d0-87bd-0359315d609b)
+顺时针旋转90度
+
 ![渐红](https://github.com/zholofmeister/Qt_final/assets/49775592/db1275ea-1a90-4c01-9ea2-fa0820486025)
 ![渐绿](https://github.com/zholofmeister/Qt_final/assets/49775592/bd713700-ce25-4ee4-b0b7-ae00ab32c0b6)
 ![渐蓝](https://github.com/zholofmeister/Qt_final/assets/49775592/ec3789d1-a4d5-4245-aee5-0a8e1a056100)
