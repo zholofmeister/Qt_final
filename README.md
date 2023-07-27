@@ -41,30 +41,72 @@ Ubuntu:  Qt creator + ffmpeg   (解码器,用于播放QMediaPlayer)
 
 # 六、测试与运行记录
 ![水平对称](https://github.com/zholofmeister/Qt_final/assets/49775592/4f91496e-35aa-4292-bc19-1e5831696d6a)
+
 水平对称
 
 ![竖直对称](https://github.com/zholofmeister/Qt_final/assets/49775592/e19a7a06-7b3c-47fb-957f-e4263c1ba42e)
+
 竖直对称
 
 ![逆时针旋转90度](https://github.com/zholofmeister/Qt_final/assets/49775592/240e1c35-a58f-4110-a241-0c642503c85f)
+
 逆时针旋转90度
 
 ![顺时针旋转90度](https://github.com/zholofmeister/Qt_final/assets/49775592/69fadaef-66a8-49d0-87bd-0359315d609b)
+
 顺时针旋转90度
 
 ![渐红](https://github.com/zholofmeister/Qt_final/assets/49775592/db1275ea-1a90-4c01-9ea2-fa0820486025)
+
+渐红
+
 ![渐绿](https://github.com/zholofmeister/Qt_final/assets/49775592/bd713700-ce25-4ee4-b0b7-ae00ab32c0b6)
+
+渐绿
+
 ![渐蓝](https://github.com/zholofmeister/Qt_final/assets/49775592/ec3789d1-a4d5-4245-aee5-0a8e1a056100)
+
+渐蓝
+
 ![灰度化](https://github.com/zholofmeister/Qt_final/assets/49775592/f2d8fa54-128c-4730-9870-06772a9b206c)
+
+灰度化
+
 ![伽马变换](https://github.com/zholofmeister/Qt_final/assets/49775592/49c0fad9-1a54-4fdc-bc73-7fe5885d143a)
+
+伽马变换
+
 ![边缘检测](https://github.com/zholofmeister/Qt_final/assets/49775592/db1d32a8-de2f-4bce-93c8-5e2f2bda276f)
+
+边缘检测
+
 ![正常播放](https://github.com/zholofmeister/Qt_final/assets/49775592/9f24d21a-1897-48ff-b8d1-5c818541be94)
+
+正常播放
+
 ![放大](https://github.com/zholofmeister/Qt_final/assets/49775592/d14813bc-2a6d-4167-a534-9e9124db64eb)
+
+放大
+
 ![缩小](https://github.com/zholofmeister/Qt_final/assets/49775592/aac5121f-f30f-4a57-9e16-e99604a135da)
+
+缩小
+
 ![二值化播放](https://github.com/zholofmeister/Qt_final/assets/49775592/f1a42a56-d890-41c4-9390-8da40229726b)
+
+二值化播放
+
 ![灰度化播放](https://github.com/zholofmeister/Qt_final/assets/49775592/855bc023-5c87-476f-8c91-8b3c1740ca9f)
+
+灰度化播放
+
 ![马赛克](https://github.com/zholofmeister/Qt_final/assets/49775592/eb215654-6d0e-4a90-ae1f-99bb33f44108)
+
+马赛克
+
 ![截图处理](https://github.com/zholofmeister/Qt_final/assets/49775592/26df0ecf-8fc7-444e-ac98-4d6040cf6d8c)
+
+截图处理
 
 # 七、结果分析与小结
 复习了之前的图像处理，学习了如何在qt内利用QVideoSurface和QMediaPlayer播放视频，并且可以将画面转化为QImage并进行图像处理.
