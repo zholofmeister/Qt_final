@@ -1,4 +1,4 @@
-![image](https://github.com/zholofmeister/Qt_final/assets/49775592/97f8b2c0-9996-4c18-b49d-f971ca4cb172)# Qt_final
+# Qt_final
 qimage and qvideo for end of term.
 
 # 一、软件设计任务概述（应用背景、任务、开发环境搭建）
